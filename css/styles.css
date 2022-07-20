@@ -275,6 +275,7 @@ img {
   text-align: center;
   color: var(--secondary-color);
   margin: 0;
+  margin-bottom: 16px;
 }
 
 .team-list {
@@ -289,6 +290,36 @@ img {
   background-color: #FFFFFF;
   padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
+}
+
+/*----------- social links -----------*/
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--default-white);
+}
+
+.social-icon {
+  fill: #AFB1B8;
+}
+
+.social-link:hover, .social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-link:hover .social-icon, .social-link:focus .social-icon {
+  fill: var(--default-white);
 }
 
 /*----------- footer section -----------*/
