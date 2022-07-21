@@ -149,6 +149,22 @@ img {
   color: var(--accent-color);
 }
 
+.header-icon {
+  align-self: center;
+  fill: var(--secondary-color);
+  margin-right: 10px;
+}
+
+.contact:hover .header-icon,
+.contact:focus .header-icon {
+  fill: var(--accent-color);
+}
+
+
+.contact.item {
+  display: flex;
+}
+
 /*----------- hero section -----------  */
 .hero {
   background-color: var(--background-color);
@@ -223,6 +239,18 @@ img {
 
 .advantage-list .item {
   width: 270px;
+}
+
+/*----------- advantage icon -----------  */
+.advantage-back {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  width: 270px;
+  background: #F5F4FA;
+  border-radius: 4px;
 }
 
 /*----------- what are we doing section ----------- */
