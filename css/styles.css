@@ -9,6 +9,7 @@
   --default-black: #000000;
   --default-white: #FFFFFF;
   --button-hover: #188CE8;
+  --logo-color: #AFB1B8;
   /* ---bg colors--- */
   --background-color: #2F303A;
   --background-color-team: #F5F4FA;
@@ -311,7 +312,7 @@ img {
 }
 
 .social-icon {
-  fill: #AFB1B8;
+  fill: var(--logo-color);
 }
 
 .social-link:hover, .social-link:focus {
@@ -320,6 +321,33 @@ img {
 
 .social-link:hover .social-icon, .social-link:focus .social-icon {
   fill: var(--default-white);
+}
+
+/*----------- clients section -----------*/
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.clients-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--logo-color);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+}
+
+.clients-icon {
+  fill: var(--logo-color);
+}
+
+.clients-item:hover, .clients-item:hover .clients-icon {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /*----------- footer section -----------*/
